@@ -237,7 +237,7 @@ mod pyroscope {
 
             client
                 .post(format!("{}/ingest", url.as_ref()))
-                .header("Content-Type", "application/json")
+                .header("Content-Type", "binary/octet-stream")
                 .query(&[
                     ("name", application_name.as_ref()),
                     ("from", &format!("{}", s_start)),
