@@ -220,7 +220,7 @@ mod pyroscope {
             let mut buffer = Vec::new();
 
             self.fold(true, &mut buffer)?;
-            
+
             if buffer.is_empty() {
                 return Ok(());
             }
