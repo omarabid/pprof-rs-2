@@ -48,7 +48,7 @@ mod collector;
 mod error;
 mod frames;
 mod profiler;
-mod report;
+pub mod report;
 mod timer;
 
 pub use self::collector::{Collector, HashCounter};
@@ -69,6 +69,3 @@ pub mod protos {
 
 #[cfg(feature = "criterion")]
 pub mod criterion;
-
-#[cfg(feature = "pyroscope")]
-pub mod pyroscope;
