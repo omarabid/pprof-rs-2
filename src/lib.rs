@@ -45,7 +45,7 @@ pub const MAX_DEPTH: usize = 32;
 pub const MAX_THREAD_NAME: usize = 16;
 
 mod collector;
-mod error;
+pub mod error;
 mod frames;
 mod profiler;
 pub mod report;
